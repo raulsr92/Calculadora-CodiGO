@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+/*Estilos Universales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-size: 20px;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.calcuator{
+    width: 357px;
+    height: 553px;
+    margin: 30px auto;
+    background-color: #7292DE;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 53px 22px 16px 22px;
+    border: 3px solid black;
+
+}
+.calculator__up{
+    width: 313px;
+    height: 80px;
+    margin-bottom: 42px;
+    border-radius: 10px;
+
+}
+
+.calculator__up p{
+    width: 100%;
+    height: 100%;
+    background-color: #EEECFF;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 40px;
+    border: 3px solid black;
+
+}
+
+.calculator__down{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__down div{
+    padding: 0px 7px 4px 26px;
+    display: grid;
+    grid-template-columns: 188px 50px;
+    column-gap: 42px;
+}
+
+.calculator__down .calculator__down--buttons__left{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-template-areas: 
+    ". trash ex"
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    ". sero dot"
+    ;
+    column-gap: 19px;
+    padding: 0;
+    row-gap: 15px;
+
+}
+
+.number, .delete, .sign{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item1{
+    grid-area: one;
+}
+.item2{
+    grid-area: two;
+}
+.item3{
+    grid-area: three;
+}
+.item4{
+    grid-area: four;
+}
+.item5{
+    grid-area: five;
+}
+.item6{
+    grid-area: six;
+}
+.item7{
+    grid-area: seven;
+}
+.item8{
+    grid-area: eight;
+}
+.item9{
+    grid-area: nine;
+}
+
+.item0{
+    grid-area: sero;
+}
+
+.item10{
+    grid-area: trash;
+}
+.item11{
+    grid-area: ex;
+}
+
+.item12{
+    grid-area: dot;
+}
+
+.calculator__down div .calculator__down--buttons__right{
+    display: grid;
+    grid-template-columns: repeat(1, 50px);
+    grid-template-rows: repeat(5, 50px);
+    column-gap: 0px;
+    padding: 0;
+    row-gap: 15px;
+}
+
+.calculator__down p{
+    color: #EEECFF;
+}
+
+.number{
+    background-color: #FF97C3;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+.delete{
+    background-color: #4CAF50;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.sign{
+    background-color: #F7E969;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.equal{
+    background-color: #F44336;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+}
